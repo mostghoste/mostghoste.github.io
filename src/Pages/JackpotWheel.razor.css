@@ -1,7 +1,35 @@
-﻿.content {
+﻿.SelectionScreen {
+    background-color: rgba(00, 25, 60, 0.4);
+    border: 1rem solid rgba(00, 25, 60, 0.4);
+    width: 60%;
+    height: 90%;
+    border-radius: 2rem;
+    min-width: 60rem;
+
 }
-h1 {
-    color: red;
+
+.container {
+    position: relative;
+    height:100%;
 }
-.wrapper {
+
+.container tr {
+    height: 100%;
+}
+
+.btn {
+    width: 15rem;
+    height: 6rem;
+    background-color: rgba(00, 25, 60, 0.8);
+    color: white;
+    margin: 1rem;
+    position: relative;
+    bottom: 0rem;
+    border-radius: 2rem;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

@@ -1,7 +1,35 @@
-.content[b-9atye5k6fh] {
+.SelectionScreen[b-9atye5k6fh] {
+    background-color: rgba(00, 25, 60, 0.4);
+    border: 1rem solid rgba(00, 25, 60, 0.4);
+    width: 60%;
+    height: 90%;
+    border-radius: 2rem;
+    min-width: 60rem;
+
 }
-h1[b-9atye5k6fh] {
-    color: red;
+
+.container[b-9atye5k6fh] {
+    position: relative;
+    height:100%;
 }
-.wrapper[b-9atye5k6fh] {
+
+.container tr[b-9atye5k6fh] {
+    height: 100%;
+}
+
+.btn[b-9atye5k6fh] {
+    width: 15rem;
+    height: 6rem;
+    background-color: rgba(00, 25, 60, 0.8);
+    color: white;
+    margin: 1rem;
+    position: relative;
+    bottom: 0rem;
+    border-radius: 2rem;
+}
+
+#footer[b-9atye5k6fh] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

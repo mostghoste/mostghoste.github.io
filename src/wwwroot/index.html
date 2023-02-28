@@ -10,6 +10,9 @@
     <link href="css/app.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="mostghosteweb.styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,3 +33,69 @@
 </body>
 
 </html>
+
+<script>
+    window.vue = new Vue({
+        el: '#app',
+        data() {
+            return {
+                rolling: false,
+                entries: new Array(100)
+            }
+        },
+
+        mounted() {
+            _.fill(this.entries, 'red', 0, 25);
+            _.fill(this.entries, 'blue', 25, 50);
+            _.fill(this.entries, 'green', 50, 75);
+            _.fill(this.entries, 'yellow', 75, 100);
+
+            this.entries = _.shuffle(this.entries)
+        },
+
+        methods: {
+            roll() {
+                this.rolling = true
+
+                this.$nextTick(() => {
+
+                    $('.entrylist').attr('style', '')
+
+                    let entriesCount = this.entries.length
+                    let entryWidth = $('.entrylist .img').outerWidth()
+                    let winnerEntry = 87
+                    let animLength = 16000
+
+                    // differ winner from surrounding entries
+                    this.entries[winnerEntry] = 'purple'
+                    this.$forceUpdate()
+
+                    // generate animation to land on center of entry
+                    let offset = (entryWidth * winnerEntry - 1)
+
+                    // generate random offset
+                    let minOffset = 10
+                    let maxOffset = entryWidth - 10
+                    let randomNum = Math.random() * (maxOffset - minOffset) + minOffset;
+                    console.log(randomNum)
+                    offset += randomNum
+
+                    $('.entrylist').width(entryWidth * entriesCount)
+
+                    // animate
+                    $('.entrylist').css({
+                        transition: 'transform ' + animLength + 'ms cubic-bezier(0.19, 1, 0.22, 1)',
+                        transform: `translate(-${offset}px)`
+                    })
+
+                    setTimeout(() => {
+                        $('.entrylist').attr('style', '')
+                        this.rolling = false
+                    }, animLength)
+                })
+
+            }
+        }
+    });
+
+</script>

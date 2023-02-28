@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\lotteryWheel.js",
+      "PackagePath": "staticwebassets\\lotteryWheel.js"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },

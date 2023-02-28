@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WR1Y+s6KS4299//5lpi4WmQVcBwMiwLzJ9Lln6kddJQ=",
+  "Hash": "OSBYaWAnrrZzHCegobUzUsD3ZYBL7uU+xQQkdb0HfII=",
   "Source": "mostghosteweb",
   "BasePath": "/",
   "Mode": "Root",
@@ -7155,6 +7155,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\lotteryWheel.js",
+      "SourceId": "mostghosteweb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "lotteryWheel.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lotteryWheel.js"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\sample-data\\weather.json",

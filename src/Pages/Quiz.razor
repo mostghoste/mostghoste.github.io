@@ -1,0 +1,34 @@
+@page "/quiz"
+
+<PageTitle>Testas</PageTitle>
+
+<h1>display winner:</h1>
+<button @onclick="displayWinner">display!</button>
+@if (displayText)
+{
+    <p>Winner: @displayTextString</p>
+}
+
+@if (scoring.GetAmtOfScores() > 0)
+{
+    <table>
+        @for (int i = 0; i < scoring.GetAmtOfScores(); i++)
+        {
+            <tr>
+                <td>Option @i</td>
+                <td>@scoring.ReturnScoreOfIndex(i)</td>
+            </tr>
+        }
+    </table>
+}
+
+<QuizQuestion question="@question"></QuizQuestion>
+
+<style>
+    td {
+        border: 1px solid black;
+        padding: 1rem;
+    }
+</style>
+
+

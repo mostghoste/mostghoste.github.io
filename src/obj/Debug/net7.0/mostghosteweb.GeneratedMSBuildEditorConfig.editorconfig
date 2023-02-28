@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/source/repos/mostghosteweb/src/Pages/Quiz.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpei5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/mostghosteweb/src/Shared/QuizQuestion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFF1aXpRdWVzdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/repos/mostghosteweb/src/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,6 +47,14 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/User/source/repos/mostghosteweb/src/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/mostghosteweb/src/Pages/JackpotWheel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFja3BvdFdoZWVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-9atye5k6fh
+
+[C:/Users/User/source/repos/mostghosteweb/src/Shared/JackpotLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEphY2twb3RMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-nn3l3s2ehd
 
 [C:/Users/User/source/repos/mostghosteweb/src/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

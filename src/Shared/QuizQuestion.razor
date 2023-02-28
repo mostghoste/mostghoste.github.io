@@ -1,0 +1,28 @@
+﻿@if (question.question != null)
+{
+    <p>Valid question!</p>
+    <p><strong>@question.question</strong></p>
+    <div style="display: flex; flex-direction: column; width: 30rem">
+        @for (int i = 0; i < question.answers.Count; i++)
+        {
+            <a>Option @(i + 1):</a>
+            <button @onclick="() => clickedButton(i)">@question.answers[i].answer</button>
+        }
+    </div>
+}
+else
+{
+    <p>Invalid question. Perhaps empty question passed?</p>
+}
+
+<a>Button with index of @buttonIndex was clicked.</a>
+@code {
+    [Parameter]
+    public Question question { get; set; } = new Question();
+    public int buttonIndex = -1;
+
+    public void clickedButton(int buttonInd)
+    {
+        buttonIndex = buttonInd;
+    }
+}

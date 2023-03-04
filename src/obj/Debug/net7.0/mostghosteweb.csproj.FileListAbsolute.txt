@@ -827,4 +827,3 @@ C:\Users\User\source\repos\mostghosteweb\src\obj\Debug\net7.0\refint\mostghostew
 C:\Users\User\source\repos\mostghosteweb\src\obj\Debug\net7.0\mostghosteweb.pdb
 C:\Users\User\source\repos\mostghosteweb\src\obj\Debug\net7.0\ref\mostghosteweb.dll
 C:\Users\User\source\repos\mostghosteweb\src\obj\Debug\net7.0\scopedcss\Pages\Jackpotwheel.razor.rz.scp.css
-C:\Users\User\source\repos\mostghosteweb\src\obj\Debug\net7.0\scopedcss\Shared\JackpotLayout.razor.rz.scp.css

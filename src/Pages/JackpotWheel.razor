@@ -1,18 +1,25 @@
 ﻿@page "/jackpot"
+@inject HttpClient Http
 
 <div class="SelectionScreen">
     <table class="container">
         <tr>
-            <td valign="top">
-                <div id="main"></div>
+            <td valign="top" class="top">
+                <div id="main">
+                    @if (enableText)
+                    {
+                        for (int i = 0; i < results.Count; i++)
+                        {
+                            <a class="results">@results[i]</a>
+                        }
+                    }
+                </div>
             </td>
         </tr>
         <tr>
             <td valign="bottom">
                 <div id="footer">
-                    <button class="btn">Gamble my future!</button>
-                    <button class="btn">Gamble my future!</button>
-                    <button class="btn">Gamble my future!</button>
+                    <button @onclick="BeginSpin" class="btn">Gamble my future!</button>
                 </div>
             </td>
         </tr>

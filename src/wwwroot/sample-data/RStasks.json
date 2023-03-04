@@ -1,0 +1,119 @@
+﻿{
+  "question": "What should I do on OSRS?",
+  "options": [
+    {
+      "optionName": "Produce",
+      "answer": "Produce a certain amount of some item!",
+      "question": "What kind of item?",
+      "options": [
+        {
+          "optionName": "Bars",
+          "answer": "Smelt bars!",
+          "question": "What kind of bars?",
+          "options": [
+            {
+              "optionName": "BronzeBars",
+              "answer": "Bronze bars!",
+              "question": "How many bronze bars?",
+              "range": {
+                "min": 1000,
+                "max": 10000
+              }
+            },
+            {
+              "optionName": "RuneBars",
+              "answer": "Runite bars!",
+              "question": "How many runite bars?",
+              "range": {
+                "min": 50,
+                "max": 500
+              }
+            }
+          ]
+        },
+        {
+          "optionName": "Arrows",
+          "answer": "Fletch arrows!",
+          "question": "What kind of arrows?",
+          "options": [
+            {
+              "optionName": "BronzeArrows",
+              "answer": "Bronze arrows!",
+              "question": "How many bronze arrows?",
+              "range": {
+                "min": 10000,
+                "max": 30000
+              }
+            },
+            {
+              "optionName": "RuneArrows",
+              "answer": "Rune arrows!",
+              "question": "How many rune arrows?",
+              "range": {
+                "min": 2000,
+                "max": 10000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "optionName": "Gather",
+      "answer": "Gather a certain amount of some item!",
+      "question": "What kind of item?",
+      "options": [
+        {
+          "optionName": "Logs",
+          "answer": "Chop logs!",
+          "question": "What kind of logs?",
+          "options": [
+            {
+              "optionName": "NormalLogs",
+              "answer": "Normal logs!",
+              "question": "How many normal logs?",
+              "range": {
+                "min": 500,
+                "max": 5000
+              }
+            },
+            {
+              "optionName": "MagicLogs",
+              "answer": "Magic Logs!",
+              "question": "How many magic logs?",
+              "range": {
+                "min": 200,
+                "max": 2000
+              }
+            }
+          ]
+        },
+        {
+          "optionName": "Ore",
+          "answer": "Mine ore!",
+          "question": "What kind of ore?",
+          "options": [
+            {
+              "optionName": "TinOre",
+              "answer": "Tin ore!",
+              "question": "How much tin ore?",
+              "range": {
+                "min": 500,
+                "max": 5000
+              }
+            },
+            {
+              "optionName": "RuneOre",
+              "answer": "Runite ore!",
+              "question": "How much runite ore?",
+              "range": {
+                "min": 50,
+                "max": 300
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

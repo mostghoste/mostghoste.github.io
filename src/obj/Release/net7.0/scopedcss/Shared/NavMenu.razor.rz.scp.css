@@ -2,11 +2,6 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-np469uqw2k] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
 .navbar-brand[b-np469uqw2k] {
     font-size: 1.1rem;
 }
@@ -60,9 +55,4 @@
         display: block;
     }
     
-    .nav-scrollable[b-np469uqw2k] {
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
-    }
 }

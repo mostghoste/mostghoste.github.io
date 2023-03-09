@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iq3irXbLe9SwNsEdtalYClEOiYVGOHSkINU6OR4Bb28=",
+  "Hash": "XydtvjCgbC+z5k8ea5pVFYktCNw8T529ZGymJKOLGXE=",
   "Source": "mostghosteweb",
   "BasePath": "/",
   "Mode": "Root",
@@ -7155,6 +7155,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\sample-data\\RStasks.json",
+      "SourceId": "mostghosteweb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/RStasks.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\RStasks.json"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\mostghosteweb\\src\\wwwroot\\sample-data\\weather.json",

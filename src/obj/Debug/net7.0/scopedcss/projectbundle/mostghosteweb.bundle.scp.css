@@ -53,6 +53,80 @@
     justify-content: center;
     align-items: center;
 }
+/* /Pages/zakapalka.razor.rz.scp.css */
+.buttonsInline[b-zmz698li67] {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.clicky-button:active[b-zmz698li67] {
+    animation: clicky-button-b-zmz698li67 0.05s linear both
+}
+
+.rollBox[b-zmz698li67] {
+    border: 2px solid black;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+}
+
+.diceSelectors[b-zmz698li67] {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.diceSelector[b-zmz698li67] {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.eventmsg[b-zmz698li67] {
+    position: absolute;
+    bottom: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: #30336b;
+    opacity: 1;
+    padding: 0.5rem;
+    min-width: 20rem;
+    text-align: center;
+}
+
+.diceValue[b-zmz698li67] {
+    margin: 1rem 0.3rem 1rem 0.3rem;
+}
+
+.arrow-btn[b-zmz698li67] {
+    color: #fff;
+    background-color: #30336b;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+}
+
+    .arrow-btn:hover[b-zmz698li67] {
+        background-color: #4834d4;
+        color: white;
+    }
+
+
+@keyframes clicky-button-b-zmz698li67 {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(.9)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 *[b-of3mmuk3fo] {
     box-sizing: border-box;

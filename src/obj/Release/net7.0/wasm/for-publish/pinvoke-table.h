@@ -33,6 +33,7 @@ int SystemNative_Close (int);
 int SystemNative_CloseDir (int);
 int SystemNative_ConvertErrorPalToPlatform (int);
 int SystemNative_ConvertErrorPlatformToPal (int);
+int SystemNative_Dup (int);
 int SystemNative_FAllocate (int,int64_t,int64_t);
 int SystemNative_FLock (int,int);
 void SystemNative_Free (int);
@@ -67,11 +68,13 @@ void SystemNative_SetErrNo (int);
 int SystemNative_Stat (int,int);
 int SystemNative_StrErrorR (int,int,int);
 int SystemNative_Unlink (int);
+int SystemNative_Write (int,int,int);
 static PinvokeImport libSystem_Native_imports [] = {
 {"SystemNative_Close", SystemNative_Close}, // System.Private.CoreLib
 {"SystemNative_CloseDir", SystemNative_CloseDir}, // System.Private.CoreLib
-{"SystemNative_ConvertErrorPalToPlatform", SystemNative_ConvertErrorPalToPlatform}, // System.Private.CoreLib
-{"SystemNative_ConvertErrorPlatformToPal", SystemNative_ConvertErrorPlatformToPal}, // System.Private.CoreLib
+{"SystemNative_ConvertErrorPalToPlatform", SystemNative_ConvertErrorPalToPlatform}, // System.Console, System.Private.CoreLib
+{"SystemNative_ConvertErrorPlatformToPal", SystemNative_ConvertErrorPlatformToPal}, // System.Console, System.Private.CoreLib
+{"SystemNative_Dup", SystemNative_Dup}, // System.Console
 {"SystemNative_FAllocate", SystemNative_FAllocate}, // System.Private.CoreLib
 {"SystemNative_FLock", SystemNative_FLock}, // System.Private.CoreLib
 {"SystemNative_Free", SystemNative_Free}, // System.Private.CoreLib
@@ -104,8 +107,9 @@ static PinvokeImport libSystem_Native_imports [] = {
 {"SystemNative_ReadLink", SystemNative_ReadLink}, // System.Private.CoreLib
 {"SystemNative_SetErrNo", SystemNative_SetErrNo}, // System.Private.CoreLib
 {"SystemNative_Stat", SystemNative_Stat}, // System.Private.CoreLib
-{"SystemNative_StrErrorR", SystemNative_StrErrorR}, // System.Private.CoreLib
+{"SystemNative_StrErrorR", SystemNative_StrErrorR}, // System.Console, System.Private.CoreLib
 {"SystemNative_Unlink", SystemNative_Unlink}, // System.Private.CoreLib
+{"SystemNative_Write", SystemNative_Write}, // System.Console
 {NULL, NULL}
 };
 static PinvokeImport libSystem_IO_Compression_Native_imports [] = {

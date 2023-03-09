@@ -23,13 +23,11 @@ namespace mostghosteweb.Pages
                 results = new List<string> ();
             }
             Console.WriteLine("Picking random task");
-            dynamic currElement;
+            dynamic? currElement;
             Random rand = new Random();
-            dynamic taskData = await Http.GetFromJsonAsync<dynamic>("sample-data/RStasks.json");
-            currElement = taskData!;
+            dynamic? taskData = await Http.GetFromJsonAsync<dynamic>("sample-data/RStasks.json");
+            currElement = taskData;
             JsonElement temp = new JsonElement();
-
-            //Pick a category
             while (currElement.TryGetProperty("options", out temp) || currElement.TryGetProperty("range", out temp))
             {
                 results.Add(currElement.GetProperty("question").ToString());

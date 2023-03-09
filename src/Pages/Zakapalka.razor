@@ -1,0 +1,71 @@
+﻿@page "/zakapalka"
+
+
+@if (!gameHasStarted)
+{
+    <div class="buttonsInline">
+        <button class="btn-primary clicky-button" @onclick="addPlayer">Add a player</button>
+        <input type="text" @bind="currentName" @oninput="@((e) => { currentName=(string)e.Value;})">
+        <button class="btn-primary clicky-button" @onclick="removePlayer">Remove last player</button>
+    </div>
+    <a class="eventmsg">@eventMsg</a>
+    @for (int i = 0; i < Players.Count; i++)
+    {
+        <a>Name: @currentName Score: @Players[i].score</a>
+    }
+
+    <button class="btn-primary clicky-button" @onclick="startGame">Start game!</button>
+}
+
+@if (gameHasStarted)
+{
+    <h1>You have to roll: <strong>@rollTarget</strong></h1>
+    <h3>Your roll:</h3>
+    <div class="rollBox">
+        <h3>@tekstas</h3>
+        <h3>Sum: @diceSum</h3>
+    </div>
+    <h3>@resultDisplayString</h3>
+
+    <div class="buttonsInline">
+        <button class="btn-primary clicky-button" @onclick="rollDiceShowSum">Press to roll!</button>
+        <button class="btn-primary clicky-button" @onclick="resetGame">Reset game!</button>
+    </div>
+
+    <a>You are going to roll:</a>
+    <a>@PlayerRoll.ToString()</a>
+
+    <a>Select the dice you'd like to roll:</a>
+    <div class="diceSelectors">
+        <div class="diceSelector">
+            <button class="clicky-button oi oi-caret-top arrow-btn" @onclick="() => addValue(4)"></button>
+            <div class="diceValue">d4: @PlayerRoll.D4Count/@DicePool.D4Count</div>
+            <button class="clicky-button oi oi-caret-bottom arrow-btn" @onclick="() => removeValue(4)"></button>
+        </div>
+        <div class="diceSelector">
+            <button class="clicky-button oi oi-caret-top arrow-btn" @onclick="() => addValue(6)"></button>
+            <div class="diceValue">d6: @PlayerRoll.D6Count/@DicePool.D6Count</div>
+            <button class="clicky-button oi oi-caret-bottom arrow-btn" @onclick="() => removeValue(6)"></button>
+        </div>
+        <div class="diceSelector">
+            <button class="clicky-button oi oi-caret-top arrow-btn" @onclick="() => addValue(8)"></button>
+            <div class="diceValue">d8: @PlayerRoll.D8Count/@DicePool.D8Count</div>
+            <button class="clicky-button oi oi-caret-bottom arrow-btn" @onclick="() => removeValue(8)"></button>
+        </div>
+        <div class="diceSelector">
+            <button class="clicky-button oi oi-caret-top arrow-btn" @onclick="() => addValue(10)"></button>
+            <div class="diceValue">d10: @PlayerRoll.D10Count/@DicePool.D10Count</div>
+            <button class="clicky-button oi oi-caret-bottom arrow-btn" @onclick="() => removeValue(10)"></button>
+        </div>
+        <div class="diceSelector">
+            <button class="clicky-button oi oi-caret-top arrow-btn" @onclick="() => addValue(12)"></button>
+            <div class="diceValue">d12: @PlayerRoll.D12Count/@DicePool.D12Count</div>
+            <button class="clicky-button oi oi-caret-bottom arrow-btn" @onclick="() => removeValue(12)"></button>
+        </div>
+        <div class="diceSelector">
+            <button class="clicky-button oi oi-caret-top arrow-btn" @onclick="() => addValue(20)"></button>
+            <div class="diceValue">d20: @PlayerRoll.D20Count/@DicePool.D20Count</div>
+            <button class="clicky-button oi oi-caret-bottom arrow-btn" @onclick="() => removeValue(20)"></button>
+        </div>
+    </div>
+}

@@ -1,0 +1,73 @@
+﻿.buttonsInline {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.clicky-button:active {
+    animation: clicky-button 0.05s linear both
+}
+
+.rollBox {
+    border: 2px solid black;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+}
+
+.diceSelectors {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.diceSelector {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.eventmsg {
+    position: absolute;
+    bottom: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: #30336b;
+    opacity: 1;
+    padding: 0.5rem;
+    min-width: 20rem;
+    text-align: center;
+}
+
+.diceValue {
+    margin: 1rem 0.3rem 1rem 0.3rem;
+}
+
+.arrow-btn {
+    color: #fff;
+    background-color: #30336b;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+}
+
+    .arrow-btn:hover {
+        background-color: #4834d4;
+        color: white;
+    }
+
+
+@keyframes clicky-button {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(.9)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
